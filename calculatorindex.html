@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Mortgage Calculator</title>
+<link rel="stylesheet" href="styles.css"> 
+<script src="calculator.js"></script> 
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Home Mortgage Calculator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>To use the Home Mortgage Calculator, enter the amount of the mortgage, the interest rate of the loan, and the number of years. Then click on the "Calculate" button to see an estimate of your monthly payment.</p>
+        </section>
+        <section>
+            <form name="Form1">
+                <label for="Amount">Mortgage Amount:</label>
+                <input type="text" id="Amount" name="Amount"><br>
+                
+                <label for="Rate">Interest Rate (%):</label>
+                <input type="text" id="Rate" name="Rate"><br>
+                
+                <label for="Years">Number of Years:</label>
+                <input type="text" id="Years" name="Years"><br>
+                
+                <input type="button" value="Calculate" onclick="mortCalc(this.form)">
+                
+                <br>
+                <label for="Payment">Monthly Payment:</label>
+                <input type="text" id="Payment" name="Payment" readonly>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
